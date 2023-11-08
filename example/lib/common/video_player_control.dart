@@ -180,7 +180,7 @@ class VideoPlayerControlState extends State<VideoPlayerControl> {
           else
             IconButton(
                 icon: const Icon(
-                  Icons.arrow_back,
+                  Icons.arrow_back_ios,
                   color: Colors.white,
                 ),
                 onPressed: backPress),
@@ -194,7 +194,7 @@ class VideoPlayerControlState extends State<VideoPlayerControl> {
           else
             IconButton(
               icon: const Icon(
-                Icons.arrow_back,
+                Icons.arrow_back_ios,
                 color: Colors.transparent,
               ),
               onPressed: () {},
