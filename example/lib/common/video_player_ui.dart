@@ -18,6 +18,7 @@ class VideoPlayerUI extends StatefulWidget {
     this.width = double.infinity, // 播放器尺寸（大于等于视频播放区域）
     this.height = double.infinity,
     this.title, // 视频需要显示的标题
+    this.cacheVideo = false, //是否启动缓存视频
   })  : type = VideoPlayerType.network,
         super(key: key);
 
@@ -29,6 +30,7 @@ class VideoPlayerUI extends StatefulWidget {
     this.title = '', // 视频需要显示的标题
   })  : type = VideoPlayerType.asset,
         url = dataSource,
+        cacheVideo = false,
         super(key: key);
 
   const VideoPlayerUI.file({
@@ -39,6 +41,7 @@ class VideoPlayerUI extends StatefulWidget {
     this.title = '', // 视频需要显示的标题
   })  : type = VideoPlayerType.file,
         url = file,
+        cacheVideo = false,
         super(key: key);
 
   final url;
@@ -46,6 +49,7 @@ class VideoPlayerUI extends StatefulWidget {
   final double? width;
   final double? height;
   final String? title;
+  final bool? cacheVideo;
 
   @override
   _VideoPlayerUIState createState() => _VideoPlayerUIState();
