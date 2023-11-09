@@ -18,7 +18,7 @@ class VideoPlayerUI extends StatefulWidget {
     this.width = double.infinity, // 播放器尺寸（大于等于视频播放区域）
     this.height = double.infinity,
     this.title, // 视频需要显示的标题
-    this.cacheVideo = false, //是否启动缓存视频
+    this.cacheVideo = false, //是否启动缓存视频 仅支持ios Android
   })  : type = VideoPlayerType.network,
         super(key: key);
 

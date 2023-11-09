@@ -4,8 +4,8 @@ version: 0.0.1
 homepage:
 
 environment:
-  sdk: '>=3.1.5 <4.0.0'
-  flutter: '>=3.3.0'
+  sdk: '>=2.17.0 <4.0.0'
+  flutter: '>=3.0.0'
 
 dependencies:
   flutter:
@@ -19,12 +19,26 @@ dependencies:
   common_utils: any
   #预防屏幕睡眠 https://pub.dev/packages/wakelock_plus
   wakelock_plus: any
+  #网络工具 https://pub.dev/packages/dio
+  dio: any
+  #路径获取 https://pub.dev/packages/path_provider
+  path_provider: any
+  #高效的数据存储 雷同 shared_preferences sqlite https://pub.dev/packages/hive
+  hive: any
+  #高效的数据存储 雷同 shared_preferences sqlite https://pub.dev/packages/hive_flutter
+  hive_flutter: any
+  # 设备获取 https://pub.dev/packages/device_info_plus
+  device_info_plus: any
 
 
+  # 手机权限 https://pub.dev/packages/permission_handler 仅支持IOS Android  window
+  permission_handler: any
   #web 支持m3u8 hls https://pub.dev/packages/video_player_web_hls 仅支持web
   video_player_web_hls: any
   #控制横竖屏控件 https://pub.dev/packages/auto_orientation 仅支持IOS Android
   auto_orientation: any
+
+
 
 dev_dependencies:
   flutter_test:
